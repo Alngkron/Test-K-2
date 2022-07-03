@@ -16,7 +16,7 @@ class LoginPage extends StatelessWidget {
               child: Image.asset("image/login.png"),
             ),
             InputWidget(
-              textHint: "Enter Username",
+              textHint: "Username",
               icon: Icons.person,
               ),
             SizedBox(height: 20),
