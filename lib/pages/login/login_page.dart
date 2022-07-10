@@ -13,7 +13,7 @@ class LoginPage extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 20),
-              child: Image.asset("image/login.png"),
+              child: Image.asset("images/login.png"),
             ),
             InputWidget(
               textHint: "Username",
