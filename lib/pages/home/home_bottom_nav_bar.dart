@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:shoestore/pages/home/bottom_cart_sheet.dart';
 import 'package:shoestore/pages/themes/color.dart';
+import 'package:sliding_sheet/sliding_sheet.dart';
 
 class HomeBottomNavBar extends StatelessWidget {
   const HomeBottomNavBar({Key? key}) : super(key: key);
@@ -25,10 +27,22 @@ class HomeBottomNavBar extends StatelessWidget {
             color: whiteColor,
             size: 32,
           ),
-          Icon(
-            CupertinoIcons.cart_fill,
-            color: whiteColor,
-            size: 32,
+          InkWell(
+            onTap: () {
+              showSlidingBottomSheet(context, builder: (context) {
+                return SlidingSheetDialog(
+                    elevation: 8,
+                    cornerRadius: 16,
+                    builder: (context, state) {
+                      return BottomCartSheet();
+                    });
+              });
+            },
+            child: Icon(
+              CupertinoIcons.cart_fill,
+              color: whiteColor,
+              size: 32,
+            ),
           ),
           Icon(
             Icons.favorite_border,
@@ -41,7 +55,7 @@ class HomeBottomNavBar extends StatelessWidget {
             size: 32,
           ),
         ],
-        ),
+      ),
     );
   }
 }
