@@ -141,7 +141,91 @@ class BottomCartSheet extends StatelessWidget {
                           ],
                         ),
                       ),
-                  Container(),
+                    Container(
+                      margin:
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+                      padding: EdgeInsets.symmetric(horizontal: 10),
+                      height: 140,
+                      decoration: boxDecoration,
+                      child: Column(
+                        mainAxisAlignment:MainAxisAlignment.center,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Delivery Fee:",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: darkColor,
+                                ),
+                              ),
+                              Text(
+                                "\$20",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: darkColor,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Divider(
+                            height: 20,
+                            thickness: 0.5,
+                            color: darkColor,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Sub-Total:",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: darkColor,
+                                ),
+                              ),
+                              Text(
+                                "\$100",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: darkColor,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Divider(
+                            height: 20,
+                            thickness: 0.5,
+                            color: darkColor,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Discount:",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: darkColor,
+                                ),
+                              ),
+                              Text(
+                                "-\$10",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.red,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),

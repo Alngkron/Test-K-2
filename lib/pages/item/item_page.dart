@@ -148,18 +148,19 @@ class ItemPage extends StatelessWidget {
                         Row(
                           children: [
                             for (int i = 5; i < 10; i++)
-                            Container(
-                              height: 35,
-                              width: 35,
-                              alignment: Alignment.center,
-                              margin: EdgeInsets.symmetric(horizontal: 5),
-                              decoration: boxDecoration,
-                              child: Text(
-                                "$i",
-                                style: TextStyle(
-                                    fontSize: 18, fontWeight: FontWeight.bold),
+                              Container(
+                                height: 35,
+                                width: 35,
+                                alignment: Alignment.center,
+                                margin: EdgeInsets.symmetric(horizontal: 5),
+                                decoration: boxDecoration,
+                                child: Text(
+                                  "$i",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold),
+                                ),
                               ),
-                            ),
                           ],
                         ),
                       ],
